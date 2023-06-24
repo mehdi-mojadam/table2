@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#d1d8e5;
+  }
+  .box{
+    display:flex;
+  }
+  .eye{
+    display:block;
+    background:#fff;
+    width:120px;
+    height:120px;
+    margin: 0 20px;
+    border-radius:50%;
+    box-shadow:0 5px 45px rgba(0,0,0,0.2);
+    position:relative;
+  }
+  .eye::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:35px;
+    transform:traslate(-50%, -50%);
+    width:45px;
+    height:45px;
+    background:#000;
+    border-radius:50%;
+    border:10px solid #157dc2;
+  }
